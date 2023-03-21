@@ -20,12 +20,12 @@ const items2 = [UserOutlined, LaptopOutlined, NotificationOutlined].map(
       key: `sub${key}`,
       icon: React.createElement(icon),
       label: `subnav ${key}`,
-      children: new Array(4).fill(null).map((_, j) => {
+      // children: new Array(4).fill(null).map((_, j) => {
+      children: ['/class1', '/class2', '/class3', '/class4'].map((item, j) => {
         const subKey = index * 4 + j + 1;
         return {
           key: subKey,
-          label: `option${subKey}`,
-          link: <Link to="/class1" />,
+          label: <Link to={item}>{`option${subKey}`}</Link>,
         };
       }),
     };
