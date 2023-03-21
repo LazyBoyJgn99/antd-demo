@@ -9,6 +9,7 @@ import { Link, Route, Routes } from 'react-router-dom';
 
 import Class1 from './pages/class1';
 import Class2 from './pages/class2';
+import Class3 from './pages/class3';
 
 const { Header, Content, Sider } = Layout;
 
@@ -91,6 +92,7 @@ const App = () => {
             <Routes>
               <Route path="/class1" Component={Class1} />
               <Route path="/class2" Component={Class2} />
+              <Route path="/class3" Component={Class3} />
             </Routes>
           </Content>
         </Layout>
